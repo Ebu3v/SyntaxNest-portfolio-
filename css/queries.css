@@ -165,6 +165,10 @@
     font-size: 43.75%; /* 1rem = 7px */
   }
 
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
   .container,
   .hero {
     padding: 0 2rem;
