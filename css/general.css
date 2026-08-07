@@ -47,7 +47,7 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
-
+  color: #555;
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
 }
@@ -68,12 +68,8 @@ body {
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 
-  margin-bottom: 9.6rem;
+  /* margin-bottom: 9.6rem; */
 }
-
-/* .grid:not(:last-child) {
-  margin-bottom: 9.6rem;
-} */
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -91,7 +87,7 @@ body {
   /* color: #45260a; */
   /* color: #343a40; */
   letter-spacing: -0.5px;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .heading-primary {
@@ -103,35 +99,21 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 5.2rem;
+  margin-bottom: 9.6rem;
 }
-
-/* .heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
-} */
-
-/* .subheading {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--primary);
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-} */
 
 .btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
+
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 10px;
-  transition: 0.35s;
+  border-radius: 9px;
+
+  transition: 0.3s;
 }
 
 .btn--full:link,
@@ -166,7 +148,7 @@ body {
   text-align: center;
 }
 
-.list {
+/* .list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -176,7 +158,7 @@ body {
   border: 1px hidden;
   padding: 4.6rem;
   border-image: initial;
-  /* background-color: var(--secondary); */
+  background-color: var(--secondary);
 
   border-radius: 8px;
 }
@@ -193,4 +175,4 @@ body {
   width: 3rem;
   height: 3rem;
   color: var(--secondary);
-}
+} */
