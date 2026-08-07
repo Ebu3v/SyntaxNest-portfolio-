@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Turning ideas into powerful digital solutions. Custom websites, web apps, and backend development with focus on quality, performance, and reliability."
+    />
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+
+    <title>SyntaxNest &mid; Profile</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <img
+          class="logo"
+          alt="SyntaxNest logo"
+          src="img/SYNTAX NEST 01@1x_045732.svg"
+        />
+
+        <nav class="main-nav">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#section--1">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-cta" href="#section--3">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="hero-heading heading-primary">
+              Turning Ideas Into<br />
+              Fast Scalable Web Applications
+            </h1>
+            <p class="hero-description">
+              Transforming ideas into modern, responsive, and high-performance
+              web applications through clean code, scalable architecture, and
+              user-focused design
+            </p>
+            <a href="#section--3" class="btn btn--full margin-right-sm"
+              >Contact</a
+            >
+            <a href="#section--1" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-about" id="section--1">
+        <div class="container grid grid--2-cols">
+          <div class="about">
+            <h2 class="heading-about heading-primary">About</h2>
+            <p class="description-about">
+              I'm a full-stack Javascript developer specializing in bulding
+              modern web applications and business websites. I focus on creating
+              fast, secure and scalable solutions that help organisations and
+              individuals achieve their goals
+            </p>
+          </div>
+
+          <div class="stack">
+            <h2 class="heading-stack subheading">Tech Stack</h2>
+            <div class="stacks">
+              <div class="stack-item">
+                <img
+                  class="stack-img"
+                  src="img/img-stack/material-icon-theme--html.svg"
+                  alt="html5 "
+                />
+                <span>HTML</span>
+              </div>
+
+              <div class="stack-item">
+                <img
+                  class="stack-img"
+                  src="img/img-stack/skill-icons--css.svg"
+                  alt="css logo"
+                />
+                <span>CSS</span>
+              </div>
+              <div class="stack-item">
+                <img
+                  class="stack-img"
+                  src="img/img-stack/selfhst--javascript.svg"
+                  alt="javascript logo"
+                />
+                <span>JAVASCRIPT</span>
+              </div>
+
+              <div class="stack-item">
+                <img
+                  class="stack-img"
+                  src="img/img-stack/selfhst--node-js.svg"
+                  alt="node.js logo"
+                />
+                <span>NODE.JS</span>
+              </div>
+
+              <div class="stack-item">
+                <img
+                  class="stack-img"
+                  src="img/img-stack/devicon--express.svg"
+                  alt="express.js logo"
+                />
+                <span>EXPRESS.JS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-featured container" id="feature-section">
+        <h2 class="heading-featured heading-secondary">Featured Project</h2>
+        <div class="grid grid--2-cols grid-featured">
+          <article class="featured-project">
+            <img
+              src="img/img-project/omnifood.png"
+              alt="screenshot of the omnifood website"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <h3 class="project-title">Omnifood</h3>
+              <p class="feature-description">
+                A responsive food subscription website featuring modern UI,
+                smooth animations, and mobile-first design principles.
+              </p>
+              <div class="project-stack">
+                <span class="badge">Javascript</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn live-demo">Live Demo</a>
+                <a href="#" class="btn github">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project">
+            <img
+              src="img/img-project/node-farm.png"
+              alt="screenshot of the node-farm web App"
+              loading="lazy"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">Node-Farm</h3>
+              <p class="feature-description">
+                A server-side rendered Node.js application demonstrating dynamic
+                routing, templating, and data-driven product pages.
+              </p>
+              <div class="project-stack">
+                <span class="badge">Node.js</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn live-demo">Live Demo</a>
+                <a href="#" class="btn github">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project">
+            <img
+              src="img/img-project/Bankist-main.png"
+              alt="screenshot of the Bankist app"
+              loading="lazy"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">Bankist</h3>
+              <p class="feature-description">
+                A JavaScript banking application showcasing DOM manipulation,
+                asynchronous operations, and interactive financial transactions.
+              </p>
+              <div class="project-stack">
+                <span class="badge">Javascript</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn live-demo">Live Demo</a>
+                <a href="#" class="btn github">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project">
+            <img
+              src="img/img-project/forkify.png"
+              alt="screenshot of the forkify website"
+              loading="lazy"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">Forkify</h3>
+              <p class="feature-description">
+                A recipe search application powered by an external API with
+                bookmarking, custom recipe uploads, and serving adjustments.
+              </p>
+              <div class="project-stack">
+                <span class="badge">Javascript</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn live-demo">Live Demo</a>
+                <a href="#" class="btn github">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project">
+            <img
+              src="img/img-project/mapty.png"
+              alt="screenshot of the mapty website"
+              loading="lazy"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">Mapty</h3>
+              <p class="feature-description">
+                A geolocation-based fitness tracker built with the Leaflet API
+                to log and visualize workouts on an interactive map.
+              </p>
+              <div class="project-stack">
+                <span class="badge">Javascript</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn live-demo">Live Demo</a>
+                <a href="#" class="btn github">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project">
+            <img
+              src="img/img-project/natours.png"
+              alt="screenshot of the natours web App"
+              loading="lazy"
+            />
+
+            <div class="project-content">
+              <h3 class="project-title">Natours</h3>
+              <p class="feature-description">
+                A production-ready full-stack tour booking application with
+                authentication, payments, REST APIs, and MongoDB integration.
+              </p>
+              <div class="project-stack">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express</span>
+                <span class="badge">MongoDB</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="btn live-demo">Live Demo</a>
+                <a href="#" class="btn github">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-services container" id="section--2">
+        <h2 class="heading-secondary center-text">Services</h2>
+
+        <p class="services-description">
+          Helping businesses and individuals build modern, responsive, reliable
+          and digital solutions
+        </p>
+
+        <ul class="service-list">
+          <li class="service-item">
+            <ion-icon class="service-icon" name="globe-outline"></ion-icon>
+            <div class="service-content">
+              <h3>Website Development</h3>
+              <p>Business websites, Landing pages, Portfolios</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <ion-icon class="service-icon" name="desktop-outline"></ion-icon>
+            <div class="service-content">
+              <h3>Web Applications</h3>
+              <p>Custom dashboards and business management systems</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <ion-icon
+              class="service-icon"
+              name="git-network-outline"
+            ></ion-icon>
+            <div class="service-content">
+              <h3>API Integration</h3>
+              <p>Payment gateways, third-party Services, automation</p>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <ion-icon class="service-icon" name="construct-outline"></ion-icon>
+            <div class="service-content">
+              <h3>Maintenance & Support</h3>
+              <p>Updates, bug fixes and ongoing technical support</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section contacts container" id="section--3">
+        <h2 class="heading-secondary">Get In Touch</h2>
+        <p class="contacts-description">
+          Have a project in mind or want to work together? I'd love to hear from
+          you.
+        </p>
+
+        <div class="social-links">
+          <a class="social-link link-gmail" href="mailto:syntaxnest1@gmail.com">
+            <img src="img/selfhst--gmail.svg" alt="gmail logo" ="email" />
+            <span> Email</span>
+          </a>
+
+          <a
+            class="social-link link-linkedin"
+            href="www.linkedin.com/in/chukwuebuka-christopher-87a277330"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="img/devicon--linkedin.svg" alt="" ="linkedin" /><span
+              >LinkedIn</span
+            ></a
+          >
+
+          <a class="social-link link-whatsapp" href="">
+            <img
+              src="img/selfhst--whatsapp.svg"
+              alt="whatsapp logo"
+              ="whatsapp"
+            /><span> WhatsApp</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <div class="container">
+        <a href="#" class="footer-logo">
+          <img
+            class="logo"
+            src="img/SYNTAX NEST LOGO 001_101818.svg"
+            alt="SyntaxNest logo"
+        /></a>
+
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; <span class="year"> 2027 </span> by Syntax Nest.
+            All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

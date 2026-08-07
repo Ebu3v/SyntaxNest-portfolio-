@@ -1,0 +1,65 @@
+@media only screen and (max-width: 768px) {
+  .header,
+  .container,
+  .hero {
+    padding: 0 2rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-text-box {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links,
+  .project-links {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .social-link,
+  .project-links .btn {
+    width: 100%;
+  }
+
+  .stack {
+    padding: 2.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.4rem 2rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 2.2rem;
+  }
+}
