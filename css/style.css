@@ -119,7 +119,7 @@
 .icon-mobile-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .icon-mobile-nav[name='close-outline'] {
@@ -168,7 +168,7 @@ HERO SECTION
 }
 
 .section {
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .section--hidden .about,
@@ -177,14 +177,14 @@ HERO SECTION
   transform: translateY(4rem);
 }
 
-.section .about,
+/* .section .about,
 .section .stack {
   opacity: 1;
   transform: translateY(0);
   transition:
     opacity 0.8s ease,
     transform 0.8s ease;
-}
+} */
 
 /* ********************* */
 /* ABOUT SECTION */
@@ -267,12 +267,12 @@ HERO SECTION
   padding: 9.6rem 0;
 }
 
-/* .grid-featured {
-  /* gap: 3.6rem; */
-/* } */
-
 .heading-featured {
   margin-top: 4rem;
+}
+
+.grid-featured {
+  margin-bottom: 6rem;
 }
 
 .featured-project {
@@ -401,7 +401,7 @@ HERO SECTION
 
 .services-description {
   max-width: 65rem;
-  margin: 1.5rem auto 5rem;
+  margin: -1.5rem auto 5rem;
   text-align: center;
   font-size: 1.8rem;
   line-height: 1.7;
