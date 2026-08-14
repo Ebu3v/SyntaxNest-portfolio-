@@ -168,13 +168,23 @@ HERO SECTION
 }
 
 .section {
-  border-bottom: 1px solid #ddd;
+  padding: 15rem 3rem;
+  border-top: 1px solid #ddd;
+
+  transition:
+    transform 1s,
+    opacity 1s;
 }
 
-.section--hidden .about,
+/* .section--hidden .about,
 .section--hidden .stack {
   opacity: 0;
   transform: translateY(4rem);
+} */
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /* .section .about,
@@ -399,9 +409,14 @@ HERO SECTION
   padding: 8rem 0;
 }
 
+.services-description,
+.contacts-description {
+  margin: -2.5rem auto 5rem;
+}
+
 .services-description {
   max-width: 65rem;
-  margin: -1.5rem auto 5rem;
+
   text-align: center;
   font-size: 1.8rem;
   line-height: 1.7;
@@ -462,14 +477,10 @@ HERO SECTION
 /* ********************* */
 /* CONTACTS*/
 /* ********************* */
-.contacts {
-  padding: 8rem 0;
-  text-align: center;
-}
 
 .contacts-description {
   max-width: 60rem;
-  margin: 0 auto 5rem;
+
   font-size: 1.8rem;
   line-height: 1.7;
 }

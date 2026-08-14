@@ -100,6 +100,16 @@ body {
   margin-bottom: 6rem;
 }
 
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -144,6 +154,7 @@ body {
 
 .center-text {
   text-align: center;
+  margin-top: 4rem;
 }
 
 /* .list {

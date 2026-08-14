@@ -9,7 +9,7 @@ yearEl.textContent = currentYear;
 const sectionHeroEl = document.querySelector('.section-hero');
 const headerEl = document.querySelector('.header');
 const headerHeight = headerEl.getBoundingClientRect().height;
-const btnNav = document.querySelector('.btn-mobile-nav');
+const btnNavEl = document.querySelector('.btn-mobile-nav');
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -41,13 +41,34 @@ document.querySelector('.nav__links').addEventListener('click', e => {
     document.querySelector(id).scrollIntoView({
       behavior: 'smooth',
     });
+    headerEl.classList.toggle('nav-open');
   }
 });
-btnNav.addEventListener('click', () => {
+btnNavEl.addEventListener('click', () => {
   headerEl.classList.toggle('nav-open');
 });
 
 //Reveal Section
+const allSection = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  console.log(entries);
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove('section--hidden');
+    observer.unobserve(entry.target);
+  });
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSection.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});
 
 /////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded', function (e) {
